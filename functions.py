@@ -15,7 +15,7 @@ def check_contains_even(*args):
     >>> check_contains_even(1,7,15,11)
     'Среди аргументов нет четных чисел'
     """
-    # print(args)
+
     set_of_args = set(args)
     if any(digit % 2 == 0 for digit in set_of_args):
         print('Среди аргументов есть четное число')
@@ -27,8 +27,24 @@ def check_contains_even(*args):
 # если возраст больше 21 года, в противном случае верни
 # сообщение "Мы не продаём алкоголь несовершеннолетним."
 age = 17
+def check_age(age):
+  """
+  # функция проверки возраста покупателя алкоголя
+  # если возраст больше 21 года осуществляем вызов функции sell_alcohol()
+  # в противном случае возвращаем сообщение "Мы не продаём алкоголь несовершеннолетним."
+
+  >>> check_age(age)
+  'Мы не продаём алкоголь несовершеннолетним.'
+  >>> check_age(age=22)
+  'here is your alcohol'
+  """
 #sell_alcohol()
-#return print("Мы не продаём алкоголь несовершеннолетним.") if age <=21 else sell_alcohol()
+  def sell_alcohol():
+      print('here is your alcohol')
+
+  return print('Мы не продаём алкоголь несовершеннолетним.') if age <=21 else sell_alcohol()
+
+
 
 
 
