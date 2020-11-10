@@ -8,11 +8,6 @@
 Тебе может понадобится модуль os, модуль argparse, цикл и словарь
 """
 
-#def words_freq(target_file):
-#    """
-#    docstrings
-#    """
-
 if __name__ == '__main__':
     pass
 
